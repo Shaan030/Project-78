@@ -1,0 +1,28 @@
+<html>
+    <head>
+        <title>Family Book</title>
+    </head>
+    <body>
+        <h1>Family Book</h1>
+        <hr> <hr>
+        <img id="family_img" src="9780316070409-1.jpg">
+        <h3 id="one" >1. Our family Book</h3>
+        <button type="button" onclick="family()">Next</button>
+        <hr>
+        <script>
+            var names=["2.My Grandmother Savita Doshi","3. My father (Akshat Doshi)","4. My mother (Purnima Doshi)","5. My Sister (Sachi Doshi)",
+           "6. My another sister (Siddhi Doshi)"," 6. Me (Shaan Doshi)" 
+            ];
+            var images=["Grandmother.jpeg","papa.jpeg","mummy.jpeg","sachu.jpeg","siddhi.jpeg","me.jpeg"];
+            var i=0;
+            function family(){
+                document.getElementById("one").innerHTML=names[i];
+                 document.getElementById(family_img).src=images[i];
+                 i++;
+                 if(i==6){
+                     i=0;
+                 }     
+            }
+        </script>
+    </body>
+</html>
